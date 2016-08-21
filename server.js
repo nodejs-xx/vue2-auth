@@ -32,7 +32,7 @@ server.use(session({
   resave: false,
   saveUninitialized: false,
   store: new MongoStore({
-    url: process.env.MONGO_URL || 'mongodb://localhost/vue2-auth',
+    url: process.env.MONGO_URL || 'mongodb://localhost:27017/vue2-auth',
   }),
 }));
 server.use(flash());
